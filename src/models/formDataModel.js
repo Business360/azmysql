@@ -33,7 +33,7 @@ const query = (sql, values) => {
 // Function to check if a table exists in the database
 const tableExists = async (tableName) => {
     const sql = `SELECT COUNT(*) AS count FROM information_schema.tables WHERE table_schema = ? AND table_name = ?`;
-    const values = [process.env.DB_DATABASE, tableName];
+    const values = [process.env.AZURE_MYSQL_DATABASE, tableName];
     const result = await query(sql, values);
     return result[0].count === 1;
 };
