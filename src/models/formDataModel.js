@@ -3,12 +3,9 @@ const mysql = require('mysql2');
 // Create a MySQL connection pool
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: process.env.AZURE_MYSQL_HOST,
-    user: process.env.AZURE_MYSQL_USER,
-    password: process.env.AZURE_MYSQL_PASSWORD,
-    database: process.env.AZURE_MYSQL_DATABASE,
-    port: process.env.AZURE_MYSQL_PORT,
-    ssl: process.env.AZURE_MYSQL_SSL ? JSON.parse(process.env.AZURE_MYSQL_SSL) : false // Parse boolean value if provided
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    database: process.env.DB_DATABASE
 });
 
 // Function to execute SQL queries
