@@ -1,4 +1,5 @@
-const mysql = require('mysql2');
+try{
+    const mysql = require('mysql2');
 
 // Create a MySQL connection pool
 const pool = mysql.createPool({
@@ -102,3 +103,8 @@ exports.create = async ({
     ];
     await query(insertSQL, values);
 };
+
+}
+catch (error) {
+    console.log(error);
+}
