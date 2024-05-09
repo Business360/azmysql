@@ -1,5 +1,12 @@
 const mysql = require('mysql2');
 
+// Log connection variables
+console.log('Azure MySQL Host:', process.env.AZURE_MYSQL_HOST);
+console.log('Azure MySQL User:', process.env.AZURE_MYSQL_USER);
+console.log('Azure MySQL Database:', process.env.AZURE_MYSQL_DATABASE);
+console.log('Azure MySQL Port:', process.env.AZURE_MYSQL_PORT);
+console.log('Azure MySQL SSL:', process.env.AZURE_MYSQL_SSL);
+
 // Create a MySQL connection pool
 const pool = mysql.createPool({
     connectionLimit: 10,
