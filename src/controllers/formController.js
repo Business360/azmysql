@@ -77,6 +77,6 @@ exports.submitForm = async (req, res) => {
         verifyRequest.end();
     } catch (error) {
         console.error('Error submitting form:', error);
-        res.status(500).send('An error occurred while submitting the form.');
+        res.status(500).send('Server did not catch your data');
     }
 };
