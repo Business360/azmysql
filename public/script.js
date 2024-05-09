@@ -956,7 +956,7 @@
 
                             if(data.includes('error')) {
                                 console.log(data);
-                                alert('There was an error submitting your form. Please try again later.');
+                                alert(data);
                                 return;
                             }
                             if(data.includes('success')) {
