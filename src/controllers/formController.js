@@ -63,7 +63,7 @@ exports.submitForm = async (req, res) => {
                     .then(() => res.send({"success": "Form submitted successfully."}))
                     .catch(error => {
                         console.error('Error submitting form:', error);
-                        res.status(500).send('An error occurred while submitting the form.');
+                        res.status(500).send(error);
                     });
             });
         });
