@@ -18,7 +18,7 @@ const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 // Start the server
-const PORT = process.env.AZURE_APP_PORT;
+const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
