@@ -1,0 +1,26 @@
+{
+  "name": "lfd-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "npx nodemon server.js",
+    "build": "esbuild src/app.js --bundle --minify --platform=node --outfile=public/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.0",
+    "mysql2": "^3.9.7",
+    "node-fetch": "^3.3.2",
+    "esbuild": "^0.14.10"
+  }
+}
