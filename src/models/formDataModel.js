@@ -3,7 +3,7 @@ try{
 
 // Create a MySQL connection pool
 const pool = mysql.createPool({
-    connectionLimit: 10,
+    // connectionLimit: 1000,
     host: process.env.AZURE_MYSQL_HOST,
     user: process.env.AZURE_MYSQL_USER,
     password: process.env.AZURE_MYSQL_PASSWORD,
