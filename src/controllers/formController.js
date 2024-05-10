@@ -31,7 +31,7 @@ exports.submitForm = async (req, res) => {
         // Verify reCAPTCHA response
         const recaptchaResponse = req.body['recaptcha_response'];
         const postData = querystring.stringify({
-            secret: '6Lfec9YpAAAAAA9Kgt5KXjf0mXOzpNwcJZmub6ol',
+            secret: '6Ldaf9cpAAAAADQED8-Iw7SquoZTRjf1qLv0EElC',
             response: recaptchaResponse
         });
 
